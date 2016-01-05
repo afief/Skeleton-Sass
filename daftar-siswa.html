@@ -43,24 +43,24 @@
 		</div>
 	</div>
 
-	<div class="section section-jumbotron">
+	<div class="section">
 		<div class="container">
-			<div class="row">
-				<div class="seven columns left">
-					<h4>Mata Ilmu</h4>
-					<p>
-						Lembaga bimbingan belajar privat dan semi privat, menyalurkan guru-guru berkualitas ke rumah anda dan membuat belajar menjadi fun. Kami melayani les privat/semi privat SEMUA MATA PELAJARAN, mulai tingkat Pra Sekolah, SD, SMP, SMA (IPA/IPS) dan program penerimaan PTN.
-					</p>
-					<p>
-						<a href="daftar-siswa.html" class="button button-primary">Daftar Siswa</a>
-					</p>
-				</div>
-				<div class="five columns right">
-					<div class="main-logo">
-						<img src="images/logo.png">
-					</div>
-				</div>
-			</div>
+			<form action="">
+
+				<label for="exampleRecipientInput">Status</label>
+				<select name="status">
+					<option value="1">Siswa</option>
+					<option value="2">Orang Tua Siswa</option>
+				</select>
+
+				<label for="exampleEmailInput">Email</label>
+				<input class="u-full-width" type="email" placeholder="alamat@email.kamu" name="email">
+
+				<label for="exampleEmailInput">Nomor Telepon</label>
+				<input class="u-full-width" type="text" placeholder="+ nomor telepon" name="phone">
+
+				<input class="button-primary" type="submit" value="Submit">
+			</form>
 		</div>
 	</div>
 

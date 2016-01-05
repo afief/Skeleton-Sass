@@ -22,11 +22,19 @@ module.exports = function(grunt) {
                     nospawn: true
                 }
             }
+        },
+
+        connect: {
+            server: {
+              options: {port: 81, base: ''}
+            }
         }
+
     });
 
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-sass');
-    grunt.registerTask('default', ['sass', 'watch']);
+    grunt.registerTask('default', ['sass', 'connect', 'watch']);
 };
